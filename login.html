@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        form>div>div{
+            width: 24%;
+            text-align: center;
+        }
+        form>div>div>span{
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0aa1ed;
+            font-size: 1.2rem;
+        }
+        form>div>div>span>a{
+            color: #ddd;
+        }
+        form>div>div>span>a:hover{
+            text-decoration: none;
+            color: #0aa1ed;
+        }
+        div#target-1:target,div#target-2:target,div#target-3:target{
+            display: block;
+        }
+        div#target-1,div#target-2,div#target-3{
+            display: none;
+            width: 312px;
+            height: 362px;
+            border: 1px solid red;
+            position: absolute;
+            top: 102px;
+            left: 48px;
+        }
+        div#target-2{
+            border-color: blue;
+        }
+        div#target-3{
+            border-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin:20px auto;width:1300px;border: 1px solid red;">
+        <img src="login.png" alt="">
+        <div style="float:right;width: 410px;height: 490px;border: 1px solid red;position: relative;top:57px;left: -135px;">
+            <form action="">
+                <div class="form-inline justify-content-center mt-5">
+                    <div><span><a href="#target-1">快捷登录</a>
+                        <div id="target-1">
+                            <div class="form-group"><input type="text" style='width:100%;margin:15px 0'></div>
+                            <div class="form-group"><input type="text" style='width:100%;margin:15px 0'></div>
+                            <div class="form-group"><input type="text" style='width:100%;margin:15px 0'></div>
+                            <input type="checkbox"><small>一周内保持登录状态</small> 
+                            <input type="button" value="立即登录" class="btn btn-primary w-100 mt-3">
+                            <ul class="list-unstyled mt-3" style='font-size:.8rem;float:left;'>
+                                <li class="list-inline-item"><a href="#">账号注册</a></li>
+                                <li class="list-inline-item"><a href="#">忘记密码</a></li>
+                            </ul>
+                            <ul class="list-unstyled list-inline-item m-0 mt-3 float-right">
+                                <li class="list-inline-item mr-0">
+    <a href="#"style='display:inline-block;width:24px;height:24px;overflow:hidden;'>
+    <img src="login_icons.png" style="position:relative;width:300%;top:-24px;"></a></li>
+                                <li class="list-inline-item mr-0"><a href="#" style='display:inline-block;width:24px;height:24px;overflow:hidden'>
+    <img src="login_icons.png" style="position:relative;width:300%;top:-24px;left:-24px;">
+                                </a></li>
+                                <li class="list-inline-item mr-0"><a href="#" style='display:inline-block;width:24px;height:24px;overflow:hidden'>
+                                        <img src="login_icons.png" style="position:relative;width:300%;top:-24px;left:-48px;">
+                                </a></li>
+                            </ul>
+                    </div></span></div>
+                    <div><span><a href="#target-2">密码登录</a><div id="target-2"></div></span></div>
+                    <div><span><a href="#target-3">扫码登录</a><div id="target-3"></div></span></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
